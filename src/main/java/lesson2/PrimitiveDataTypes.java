@@ -9,5 +9,8 @@ package lesson2;
  * @author re4r
  */
 public class PrimitiveDataTypes {
-    
+    public static void main(String[] args) {
+        
+        System.out.println("Hello World");
+    }
 }
