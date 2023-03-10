@@ -27,8 +27,6 @@ public class ArithmeticAndLogigalOperations {
             l /= j;
         }
         System.out.println(l);
-        
-        
-        
+  
     }
 }
