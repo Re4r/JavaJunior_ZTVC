@@ -10,8 +10,13 @@ public class Lesson5 {
                 System.out.println(result);
                 
                 Car car = new Car();
+                
+                car.color = "Red";
+                car.engine = "V6";
+                car.speed = 60;
+                
                 car.acc(result);
-                car.brake(result);
+                car.brake(50);
                 car.info();
         }
     
@@ -27,8 +32,8 @@ class Summator {
 
 class Car {
         
-        String color = "Orange";
-        String engine = "V8";
+        String color;
+        String engine;
         int speed;
         
         int acc(int x) {
@@ -40,7 +45,7 @@ class Car {
         }
         
         void info() {
-                System.out.println(color + engine + speed);
+                System.out.println(color + " " + engine + " " + speed);
         }
 }
 
