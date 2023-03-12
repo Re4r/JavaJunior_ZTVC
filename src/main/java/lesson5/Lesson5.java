@@ -6,8 +6,10 @@ public class Lesson5 {
         public static void main(String[] args) {
                 
                 Summator summator = new Summator();
+                
                 int result = summator.sum(50, 60, 70);
                 int result2 = summator.average(10, 20, 30);
+                
                 System.out.println(result);
                 System.out.println(result2);
                 
