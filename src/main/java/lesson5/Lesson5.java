@@ -23,8 +23,6 @@ public class Lesson5 {
                 car.brake(50);
                 car.info();
         }
-    
-   
 }
 
 class Summator {
