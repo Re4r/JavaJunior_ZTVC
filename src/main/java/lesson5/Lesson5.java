@@ -7,7 +7,9 @@ public class Lesson5 {
                 
                 Summator summator = new Summator();
                 int result = summator.sum(50, 60, 70);
+                int result2 = summator.average(10, 20, 30);
                 System.out.println(result);
+                System.out.println(result2);
                 
                 Car car = new Car();
                 
@@ -27,6 +29,10 @@ class Summator {
         
         int sum(int x, int y, int z) {
                 return x + y + z;
+        }
+        
+        int average(int x, int y, int z) {
+                return sum(x, y, z) / 3;
         }
 }
 
