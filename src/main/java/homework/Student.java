@@ -24,11 +24,19 @@ public class Student {
     
     public static void main(String[] args) {
         
-        
-        
         Student student1 = new Student(10, "John", "Smith", 2002, 4.5, 4.7, 3.8);
         Student student2 = new Student(11, "Alex", "Veron", 2003, 3.8, 3.5, 4.2);
         Student student3 = new Student(12, "Mike", "Tooet", 2004, 4.2, 3.4, 3.9);
+        
+        double average1 = (student1.economyAverage + student1.foreignLanguageAverage + student1.mathematics) / 3;
+        double average2;
+        double average3;
+        
+        System.out.println(student1);
+        System.out.println(student2);
+        System.out.println(student3);
+        
+        
   
     }
 }
