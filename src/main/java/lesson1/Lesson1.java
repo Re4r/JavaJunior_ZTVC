@@ -8,7 +8,7 @@ package lesson1;
  *
  * @author re4r
  */
-public class Introduce {
+public class Lesson1 {
     public static void main(String[] args) {
         System.out.println("Hello World");
     }
