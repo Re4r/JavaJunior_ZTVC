@@ -31,6 +31,10 @@ public class Student {
             double average1 = (student1.economyAverage + student1.foreignLanguageAverage + student1.mathematics) / 3;
             double average2 = (student2.economyAverage + student2.foreignLanguageAverage + student2.mathematics) / 3;
             double average3 = (student3.economyAverage + student3.foreignLanguageAverage + student3.mathematics) / 3;
+            
+            System.out.println(student1);
+            System.out.println(student2);
+            System.out.println(student3);
 
             System.out.println("Average: " + average1);
             System.out.println("Average: " + average2);
