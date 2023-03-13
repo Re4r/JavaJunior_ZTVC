@@ -12,6 +12,10 @@ public class Lesson6 {
                 System.out.println(summator.sum(1, 2, 3));
                 System.out.println(summator.sum(1, 2, 3, 4));
                 
+                Student student1 = new Student();
+                Student student2 = new Student(1245, 4);
+                Student student3 = new Student(4567, "Johanna", 5);
+                
         }
 
 }
