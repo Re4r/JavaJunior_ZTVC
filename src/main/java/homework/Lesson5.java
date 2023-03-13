@@ -11,6 +11,9 @@ public class Lesson5 {
                 
                 Student student = new Student(3.4, 4.8, 3.9);
                 student.average();
+                
+                Employee employee = new Employee(3456789, 5400);
+                employee.salaryDoublePump();
         }
 }
 
@@ -50,8 +53,23 @@ class Student {
         }
         
         void average() {
-                double averagePoint = mathematicsAv + physicsAv + literatureAv;
-                System.out.println("Average: " + averagePoint);
+                System.out.println("Average: " + (mathematicsAv + physicsAv + literatureAv));
         }
                 
+}
+
+class Employee {
+        
+        int id;
+        double salary;
+        
+        Employee(int id, double salary) {
+                this.id = id;
+                this.salary = salary;
+        }
+        
+        void salaryDoublePump() {
+                salary *= 2;
+                System.out.println("id: " + id + "new salary: " + salary);
+        }
 }
