@@ -29,5 +29,23 @@ public class B {
                 this.salary = salary;
                 this.number = number;
         }
+        
+        public void show() {
+                System.out.println(id);
+                System.out.println(year);
+                System.out.println(salary);
+                System.out.println(number);
+        }
+        
+        public int  getYear() {
+                return year;
+        }
+        
+        public void setYear(int year) {
+                this.year = year;
+        }
+        
+        
+        
 
 }
