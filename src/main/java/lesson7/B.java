@@ -23,7 +23,7 @@ public class B {
                 this.salary = salary;
         }
         
-        protected B(int id, int year, double salary, int number) {
+        public B(int id, int year, double salary, int number) {
                 this.id = id;
                 this.year = year;
                 this.salary = salary;
