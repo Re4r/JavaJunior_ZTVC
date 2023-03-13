@@ -38,3 +38,24 @@ class Summator {
                 return a + b + c + d;
         }
 }
+
+class Student {
+        
+        int id;
+        String name;
+        int course;
+        
+        Student(int id, String name, int course) {
+                this.id = id;
+                this.name = name;
+                this.course = course;
+        }
+        
+        Student(int id, int course) {
+                this(id, null, course);
+        }
+        
+        Student() {
+                this(0, null, 0);
+        }
+}
