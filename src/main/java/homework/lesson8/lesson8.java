@@ -23,3 +23,18 @@ class Test {
                 System.out.println(x % y);
         }
 }
+
+class Test2 {
+        
+        public static final double PI = 3.14;
+        
+        public  double circleArea(double radius) {
+                return PI * Math.pow(radius, 2);
+        }
+        
+        static double circleLength(double radius) {
+                return 2 * PI * radius;
+        }
+        
+        public void info()
+}
