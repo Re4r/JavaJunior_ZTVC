@@ -1,8 +1,6 @@
 
 package lesson9;
 
-import java.util.logging.Logger;
-
 public class Lesson9 {
         public static void main(String[] args) {
                 
