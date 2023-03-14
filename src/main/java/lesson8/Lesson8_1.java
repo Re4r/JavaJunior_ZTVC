@@ -12,6 +12,8 @@ public class Lesson8_1 {
                 student2.showInfo();
                 student3.showInfo();
                 
+                Student.showCount();
+                
         }
 }
 
@@ -29,7 +31,12 @@ class Student {
                 
         }
         
+        public static void showCount() {
+                System.out.println("Count: " + count);
+        }
+        
         public void showInfo() {
+                count++;
                 System.out.println("Student: " + count + " created");
         }
 }
