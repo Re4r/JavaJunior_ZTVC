@@ -1,9 +1,17 @@
 
 package lesson9;
 
+import java.util.logging.Logger;
+
 public class Lesson9 {
         public static void main(String[] args) {
                 
+                Car car1 = new Car("Red", "V8", 2500);
+                car1.showColor();
+                car1.changePrice("Orange");
+                car1.setColor("Grey");
+                System.out.println(car1.getColor());
+               
         }
 }
 
@@ -51,9 +59,11 @@ class Car {
                 System.out.println("Color: " + color);
         }
         
-        public void changePrice() {
-                
+        public void changePrice(String color) {
+                this.color = color;
+                price += 1000;
+                System.out.println("New color: " + color);
+                System.out.println("New price: " + price);
         }
-        
-        
+
 } 
