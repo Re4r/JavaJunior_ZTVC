@@ -13,10 +13,7 @@ public class Lesson8_1 {
                 student3.showInfo();
                 
                 Student.showCount();
-                
-                Class<Student> aClass = Student.class;
-                System.out.println(aClass);
-                
+
         }
 }
 
