@@ -14,6 +14,9 @@ public class Lesson8_1 {
                 
                 Student.showCount();
                 
+                Class<Student> aClass = Student.class;
+                System.out.println(aClass);
+                
         }
 }
 
@@ -39,4 +42,6 @@ class Student {
                 count++;
                 System.out.println("Student: " + count + " created");
         }
+        
+        
 }
