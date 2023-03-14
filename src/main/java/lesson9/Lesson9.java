@@ -7,10 +7,14 @@ public class Lesson9 {
         public static void main(String[] args) {
                 
                 Car car1 = new Car("Red", "V8", 2500);
+                Car car2 = new Car("Blue", "V6", 3500);
                 car1.showColor();
                 car1.changePrice("Orange");
                 car1.setColor("Grey");
+                car2.showColor();
+                car2.changePrice("Yellow");
                 System.out.println(car1.getColor());
+                System.out.println(Car.getCount());
                
         }
 }
@@ -52,6 +56,11 @@ class Car {
         public void setPrice(int price) {
                 this.price = price;
         }
+
+        public static int getCount() {
+                return count;
+        }
+        
         
         
         
