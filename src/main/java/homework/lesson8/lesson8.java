@@ -6,6 +6,11 @@ public class lesson8 {
                 
                 Test.division(Test.multiply(2, 4, 6), 5);
                 Test.remainder(Test.multiply(2, 4, 6), 5);
+                
+                Test2 test2 = new Test2();
+                System.out.println(test2.circleArea(50));
+                Test2.circleLength(60);
+                test2.info(70);
         }
 }
 
@@ -32,9 +37,12 @@ class Test2 {
                 return PI * Math.pow(radius, 2);
         }
         
-        static double circleLength(double radius) {
+        public static double circleLength(double radius) {
                 return 2 * PI * radius;
         }
         
-        public void info()
+        public void info(double radius) {
+                System.out.println(circleArea(radius));
+                System.out.println(circleLength(radius));
+        }
 }
