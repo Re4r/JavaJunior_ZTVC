@@ -5,7 +5,7 @@ public class Exec {
         public static void main(String[] args) {
                 
                 Car car1 = new Car(8, 4);
-                Car car2 = new Car(6, 2);
+                Car car2 = new Car(6, 6);
                 
                 if (car1.getEngine() > car2.getEngine()) {
                         if (car1.getDoorCount() > car2.getDoorCount()) {
@@ -20,3 +20,4 @@ public class Exec {
                 System.out.println(Car.getGrade());
         }
 }
+
