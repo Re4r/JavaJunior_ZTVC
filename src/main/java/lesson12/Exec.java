@@ -9,8 +9,14 @@ public class Exec {
                 
                 if (car1.getEngine() > car2.getEngine()) {
                         if (car1.getDoorCount() > car2.getDoorCount()) {
-                                
+                                Car.setGrade(100);
+                        } else {
+                                Car.setGrade(50);
                         }
+                } else {
+                        Car.setGrade(80);
                 }
+                
+                System.out.println(Car.getGrade());
         }
 }
