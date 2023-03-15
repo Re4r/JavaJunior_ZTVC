@@ -1,7 +1,7 @@
 
 package lesson9;
 
-class Car {
+public class Car {
         
         private static int count;
         private String color;
