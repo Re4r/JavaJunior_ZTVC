@@ -3,7 +3,7 @@ package lesson11;
 
 public class Employee {
         
-        private String name;
+        private final String name;
         private double salary;
 
         public Employee(String name, double salary) {
