@@ -10,8 +10,17 @@ public class Employee {
                 this.name = name;
                 this.salary = salary;
         }
+
+        public double getSalary() {
+                return salary;
+        }
         
+
         public double x2Salary() {
                 return Math.pow(salary, 2);
+        }
+        
+        public void giveSalary() {
+                this.salary = x2Salary();
         }
 }
