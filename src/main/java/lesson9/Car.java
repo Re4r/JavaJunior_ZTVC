@@ -3,11 +3,11 @@ package lesson9;
 
 public class Car {
         
-        private static int count;
+         private static int count;
         private String color;
         private String engine;
         private int price;
-
+        
         public Car(String color, String engine, int price) {
                 this.color = color;
                 this.engine = engine;
@@ -57,4 +57,4 @@ public class Car {
                 System.out.println("New price: " + price);
         }
 
-} 
+}
