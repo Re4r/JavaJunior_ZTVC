@@ -3,6 +3,7 @@ package lesson10;
 
 import lesson9.Car;
 import lesson8.*;
+import homework.lesson8.Lesson8h;
 
 public class Lesson10 {
         public static void main(String[] args) {
@@ -14,6 +15,9 @@ public class Lesson10 {
                 tesv.info();
                 
                 System.out.println(Lesson8.AXV);
+                
+                Lesson8h object = new Lesson8h();
+                System.out.println(object);
                 
                 
         }

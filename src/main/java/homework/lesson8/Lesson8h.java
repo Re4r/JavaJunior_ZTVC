@@ -1,7 +1,7 @@
 
 package homework.lesson8;
 
-public class lesson8 {
+public class Lesson8h {
         public static void main(String[] args) {
                 
                 Test.division(Test.multiply(2, 4, 6), 5);
