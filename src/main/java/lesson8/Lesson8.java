@@ -2,6 +2,8 @@
 package lesson8;
 
 public class Lesson8 {
+        
+        public static final int AXV = 10;
 
         public static void main(String[] args) {
                 
@@ -12,7 +14,7 @@ public class Lesson8 {
                 System.out.println(test.A + test.B);
                 System.out.println(test2.A - test2.B);
                 
-                Class<Test> aClass = Test.class;
+                Class<Tesv> aClass = Tesv.class;
                 System.out.println(aClass);
         }
 }
@@ -25,5 +27,10 @@ public class Lesson8 {
         public Test(int A, int B) {
                 this.A = A;
                 this.B = B;
+        }
+        
+        public void info() {
+                System.out.println(this.A);
+                System.out.println(this.B);
         }
 }

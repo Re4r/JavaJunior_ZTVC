@@ -14,7 +14,7 @@ public class Lesson8_1 {
                 
                 Student.showCount();
                 
-                Test test = new Test(4, 7);
+                Tesv test = new Tesv(4, 7);
                 System.out.println(test.A);
                 System.out.println(test.B);
 

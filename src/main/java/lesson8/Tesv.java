@@ -1,12 +1,12 @@
 
 package lesson8;
 
-public class Test {
+public class Tesv {
         
         private final int A;
         private final int B;
 
-        public Test(int A, int B) {
+        public Tesv(int A, int B) {
                 this.A = A;
                 this.B = B;
         }
