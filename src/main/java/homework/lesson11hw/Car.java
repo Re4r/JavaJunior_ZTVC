@@ -21,14 +21,13 @@ public class Car {
                 return numberOfDoors;
         }
         
-        
-        
         public void changeNumbersOfDoors(int number) {
                 this.numberOfDoors = number;
         }
         
         public static void changeColorsOfCars(Car car1, Car car2) {
-                Car car3 = car1;
+                Car car3 = new Car(null, null, 0);
+                car3.color = car1.color;
                 car1.color = car2.color;
                 car2.color = car3.color;
         }

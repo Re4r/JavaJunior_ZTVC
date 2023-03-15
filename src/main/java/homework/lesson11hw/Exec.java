@@ -12,5 +12,10 @@ public class Exec {
                 
                 System.out.println(car1.getNumberOfDoors());
                 System.out.println(car2.getNumberOfDoors());
+                
+                Car.changeColorsOfCars(car1, car2);
+                
+                System.out.println(car1.getColor());
+                System.out.println(car2.getColor());
         }
 }
