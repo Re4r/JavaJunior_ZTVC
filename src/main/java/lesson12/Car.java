@@ -3,6 +3,8 @@ package lesson12;
 
 public class Car {
         
+        private static int grade;
+        
         private int engine;
         private int doorCount;
 
@@ -18,6 +20,15 @@ public class Car {
         public int getDoorCount() {
                 return doorCount;
         }
+
+        public static int getGrade() {
+                return grade;
+        }
+
+        public static void setGrade(int grade) {
+                Car.grade = grade;
+        }
+        
         
         
 
