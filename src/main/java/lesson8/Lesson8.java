@@ -11,10 +11,13 @@ public class Lesson8 {
                 
                 System.out.println(test.A + test.B);
                 System.out.println(test2.A - test2.B);
+                
+                Class<Test> aClass = Test.class;
+                System.out.println(aClass);
         }
 }
 
-class Test {
+ class Test {
         
         public final int A;
         public final int B;

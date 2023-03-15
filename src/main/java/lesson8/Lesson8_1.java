@@ -13,6 +13,10 @@ public class Lesson8_1 {
                 student3.showInfo();
                 
                 Student.showCount();
+                
+                Test test = new Test(4, 7);
+                System.out.println(test.A);
+                System.out.println(test.B);
 
         }
 }
