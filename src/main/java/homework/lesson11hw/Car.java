@@ -12,6 +12,24 @@ public class Car {
                 this.engine = engine;
                 this.numberOfDoors = numberOfDoors;
         }
+
+        public String getColor() {
+                return color;
+        }
+
+        public int getNumberOfDoors() {
+                return numberOfDoors;
+        }
         
         
+        
+        public void changeNumbersOfDoors(int number) {
+                this.numberOfDoors = number;
+        }
+        
+        public static void changeColorsOfCars(Car car1, Car car2) {
+                Car car3 = car1;
+                car1.color = car2.color;
+                car2.color = car3.color;
+        }
 }
