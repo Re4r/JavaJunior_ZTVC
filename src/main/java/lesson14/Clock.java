@@ -10,10 +10,19 @@ public class Clock {
         }
         
         static void time() {
-                for (int i = 0; i < 24; i++) {
+                OUTER: for (int i = 0; i < 24; i++) {
                         System.out.println("start of outer loop...");
-                        for (int j = 0; j < 60; j++) {
+                        INNER: for (int j = 0; j < 60; j++) {
+                                
+                                if (j == 40) {
+                                        continue INNER;
+                                }
+                                
                                 System.out.println(i + " : " + j);
+                                
+                                if (j == 50) {
+                                        break OUTER;
+                                }
                         }
                         System.out.println("end of outer loop");
                 }
