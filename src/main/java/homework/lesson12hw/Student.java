@@ -25,7 +25,7 @@ public class Student {
                 return averageGrade;
         }
         
-        void equalStudents1(Student st1, Student st2) {
+        static void equalStudents1(Student st1, Student st2) {
                 if (st1.equals(st2)) {
                         System.out.println("Students are equal");
                 } else {
@@ -33,7 +33,7 @@ public class Student {
                 }
         }
         
-        void equalStudents2 (Student st1, Student st2) {
+        static void equalStudents2 (Student st1, Student st2) {
                 if (st1.getName().equals(st2.getName())) {
                         if (st1.getCourse() == st2.getCourse()) {
                                 if (st1.getAverageGrade() == st2.getAverageGrade()) {
