@@ -9,6 +9,8 @@ public class Exec16 {
                 
                 System.out.println(carColor.getColor());
                 System.out.println(carColor1.getColor());
+                System.out.println(carColor);
+                System.out.println(carColor1);
                 
                 
         }
