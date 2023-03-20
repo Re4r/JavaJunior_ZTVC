@@ -4,7 +4,9 @@ package lesson15;
 public class ClockWhileLoop {
         
         public static void main(String[] args) {
-                time3();
+                time();
+                //time2();
+                //time3();
         }
         
         private static void time() {
