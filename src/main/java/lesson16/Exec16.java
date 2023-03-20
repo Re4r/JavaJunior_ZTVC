@@ -16,6 +16,7 @@ public class Exec16 {
                 int f = string.indexOf('a', 1);
                 boolean g = string.startsWith("abc");
                 boolean h = string1.startsWith("efg", 4);
+                boolean a1 = string.endsWith("g");
                 
                 
                 System.out.println(a);
@@ -26,6 +27,7 @@ public class Exec16 {
                 System.out.println(f);
                 System.out.println(g);
                 System.out.println(h);
+                System.out.println(a1);
                         
         }
 
