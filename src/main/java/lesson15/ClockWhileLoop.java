@@ -4,7 +4,7 @@ package lesson15;
 public class ClockWhileLoop {
         
         public static void main(String[] args) {
-                time();
+                //time();
                 //time2();
                 //time3();
         }
@@ -34,9 +34,9 @@ public class ClockWhileLoop {
         }
         
         private static void time3() {
-                for (int i = 0; i < 24; i++) {
+                OUTER: for (int i = 0; i < 24; i++) {
                         int j = 0;
-                        while (j < 60) {                                
+                        INNER: while (j < 60) {                                
                                 System.out.println(i + ":" + j);
                                 j++;
                         }
