@@ -8,8 +8,12 @@ public class Exec16_3 {
                 String string = "  HelloMeteor  ";
                 String string1 = "TechnoRave";
                 
-                String string2 = string.trim().replace("Hello", string1.substring(0, 6));
+                String string2 = string.trim()
+                        .replace("Hello", string1.substring(string1.indexOf('T'), string1.indexOf('R')))
+                        .toUpperCase();
+                
                 System.out.println(string2);
+                
         }
 
 }
