@@ -11,7 +11,7 @@ public class Exec19 {
                 int[] array1 = new int[2];
                 array1[0] = 10;
                 array1[1] = 20;
-                System.out.println(Arrays.toString(array1));
+                //System.out.println(Arrays.toString(array1));
                 
                 // Dynamic Initialization:
                 int[][] array = new int[3][];
@@ -25,5 +25,8 @@ public class Exec19 {
                                 array[i][j] = j;
                         }
                 }
+                System.out.println(Arrays.toString(array[2]));
+                
+                
         }
 }
