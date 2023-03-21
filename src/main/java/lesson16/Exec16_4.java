@@ -16,7 +16,8 @@ public class Exec16_4 {
  
         public static void main(String[] args) {
                 
-                transformPoetry(STR);
+                //transformPoetry(STR);
+                transformPoetry2(STR);
                 
         }
         
@@ -29,6 +30,23 @@ public class Exec16_4 {
                         c1 = string.charAt(i);
                         c2 = string2.charAt(i);
                         if (c1 != ',' && c1 != ':' && c1 != ' ' && c1 != '.' && c1 == c2 && c1 != '?' && c1 != '!') {
+                                System.out.println();
+                                System.out.print(c1);
+                                continue;
+                        }
+                        System.out.print(c1);
+                }
+                System.out.println();
+        }
+        
+        static void transformPoetry2(String str) {
+                String str2 = str.toUpperCase();
+                char c1;
+                char c2;
+                for (int i = 0; i < str.length(); i++) {
+                        c1 = str.charAt(i);
+                        c2 = str2.charAt(i);
+                        if (c1 == c2 && c1 != ',' && c1 != '!' && c1 != '?' && c1 != ' ' && c1 != '.') {
                                 System.out.println();
                                 System.out.print(c1);
                                 continue;
