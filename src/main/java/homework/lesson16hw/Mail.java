@@ -7,8 +7,12 @@ public class Mail {
         private static String m2 = "one@mail.ru";
         private static String m3 = "two@gmail.com";
         
+        private static String[] str = {m1, m2, m3};
+        
         public static void main(String[] args) {
-                showDomainName(m3);
+                for (String string : str) {
+                        showDomainName(string);
+                }
         }
         
         static void showDomainName(String string) {
