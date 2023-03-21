@@ -15,8 +15,10 @@ public class Exec19_2 {
                 System.out.println(Arrays.toString(array));
                 
                 Arrays.sort(array);
+                int index = Arrays.binarySearch(array, 9);
                 
                 System.out.println(Arrays.toString(array));
+                System.out.println(index);
                 
         }
 
