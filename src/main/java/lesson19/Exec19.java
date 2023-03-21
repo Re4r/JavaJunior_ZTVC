@@ -7,12 +7,15 @@ public class Exec19 {
      
         public static void main(String[] args) {
                 
-                int [] array1 = new int[10];
-                String [] array2 = new String [10];
-                double [] array3 = new double[10];
+                // Static Initialization:
+                int[] array1 = new int[2];
+                array1[0] = 10;
+                array1[1] = 20;
+                System.out.println(Arrays.toString(array1));
                 
-                System.out.println(Arrays.toString(array3));
+                // Dynamic Initialization:
                 
+    
         }
 
 }
