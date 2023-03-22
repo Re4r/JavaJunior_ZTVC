@@ -12,18 +12,18 @@ public class Exec19Hw {
                 
                 showArray(arraySource2);
 
-                System.out.println(Arrays.toString(bubbleSortArray(arraySource)));
+                System.out.println(Arrays.toString(sortArray(arraySource)));
                 
         }
         
  
-        static int[] bubbleSortArray(int[] array) {
+        static int[] sortArray(int[] array) {
                  for (int i = 0; i < arraySource.length; i++) {
                         arraySource[i] = (int) (Math.random() * 10);
                 }
                 for (int i = 0; i < array.length; i++) {
                         for (int j = i + 1; j < array.length; j++) {
-                                int temp = 0;
+                                int temp;
                                 if (array[i] > array[j]) {
                                         temp = array[i];
                                         array[i] = array[j];
