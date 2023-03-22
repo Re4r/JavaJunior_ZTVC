@@ -10,27 +10,17 @@ public class Exec19Hw {
         
         public static void main(String[] args) {
                 
-                for (int i = 0; i < arraySource.length; i++) {
-                        arraySource[i] = (int) (Math.random() * 10);
-                }
-                
-                for (int i = 0; i < arraySource2.length; i++) {
-                        for (int j = 0; j < arraySource2[i].length; j++) {
-                                arraySource2[i][j] = (int) (Math.random() * 10);
-                        }
-                }
-                
-                for (int i = 0; i < arraySource2.length; i++) {
-                        System.out.println(Arrays.toString(arraySource2[i]));
-                }
+                showArray(arraySource2);
 
-                System.out.println(Arrays.toString(arraySource));
                 System.out.println(Arrays.toString(bubbleSortArray(arraySource)));
                 
         }
         
  
         static int[] bubbleSortArray(int[] array) {
+                 for (int i = 0; i < arraySource.length; i++) {
+                        arraySource[i] = (int) (Math.random() * 10);
+                }
                 for (int i = 0; i < array.length; i++) {
                         for (int j = i + 1; j < array.length; j++) {
                                 int temp = 0;
@@ -42,6 +32,18 @@ public class Exec19Hw {
                         }
                 }
                 return array;
+        }
+        
+        static void showArray(int[][] array) {
+                  for (int i = 0; i < arraySource2.length; i++) {
+                        for (int j = 0; j < arraySource2[i].length; j++) {
+                                arraySource2[i][j] = (int) (Math.random() * 10);
+                        }
+                }
+                
+                for (int i = 0; i < arraySource2.length; i++) {
+                        System.out.println(Arrays.toString(arraySource2[i]));
+                }
         }
 
 }
