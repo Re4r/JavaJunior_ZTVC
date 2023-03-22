@@ -19,15 +19,15 @@ public class Exec19Hw {
         }
         
         static int[] sortArray(int[] array) {
-                int[] array2 = array.clone();
-                int min = array2[0];
-                for (int i = 0; i < array2.length; i++) {
-                        for (int j = 0; j < 10; j++) {
-                                
+                int[] array2 = new int[array.length];
+                int min = array[0];
+                for (int i = 0; i < array.length; i++) {
+                        if (array[i] < min) {
+                                min = array[i];
+                                array2[i] = min;
                         }
-                            
                 }
-                return arraySource;
+                return array2;
         }
 
 }
