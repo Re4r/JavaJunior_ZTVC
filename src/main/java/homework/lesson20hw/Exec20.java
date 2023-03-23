@@ -11,22 +11,24 @@ public class Exec20 {
         
         public static void main(String[] args) {
                 
+                System.out.println(Arrays.toString(args));
+
                 initialize(ARRAY1, ARRAY2, ARRAY3);
                 
                 System.out.println(Arrays.toString(example(ARRAY1, ARRAY2, ARRAY3)));
                 
                 String[] result = example(ARRAY1, ARRAY2, ARRAY3);
                 
-                for (String str : args) {
-                        for (int i = 0; i < result.length  ; i++) {
-                                if (result[i].equals(str)) {
-                                        result[i] = null;
-                                }
+                for (int i = 0; i < args.length; i++) {
+                        for (int j = 0; j < result.length; j++) {
+                                if (args[i].equals(result[j])) {
+                                        result[j] = null;
                         }
                 }
+
                 System.out.println(Arrays.toString(result));
- 
         }
+}                
         
         static String[] example(String[] ... string) {
                 StringBuilder stringBuilder = new StringBuilder();
