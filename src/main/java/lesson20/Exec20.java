@@ -5,24 +5,26 @@ import java.util.Arrays;
 
 public class Exec20 {
         
-        private static final int[][] sourceArray = new int[3][10];
+        private static final int[][] sourceArray = new int[10][];
         
         public static void main(String[] args) {
                 
                 initialization(sourceArray);
-                //show(sourceArray);
-                System.out.println(Arrays.toString(sourceArray[0]));
+                show(sourceArray);
+                
                 
         }
         
         static void initialization(int[][] array) {
-                for (int[] arr : array) {
-                        for (int item : arr) {
-                                item = (int) (Math.random() * 10);
-                                System.out.println(item);
-                        }
-                        System.out.println(Arrays.toString(arr));
+                for (int i = 0; i < array.length; i++) {
+                        array[i] = new int[(int) (Math.random() * 10)];
                 }
+                for (int[] a : array) {
+                        for (int i = 0; i < a.length; i++) {
+                                a[i] = (int) (Math.random() * 10);
+                        }
+                }
+
         }
         
         static void show(int[][] array) {
