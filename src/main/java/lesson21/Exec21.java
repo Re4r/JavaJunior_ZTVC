@@ -14,8 +14,8 @@ public class Exec21 {
                         list.add(i);
                 }
                 
-                list.add(list.size(), 999);
-                list.add(0, 111);
+                list.add(list.size(), (int)(Math.random() * 10));
+                list.add(0, (int)(Math.random() * 10));
                 
                 for (int i = 0; i < list.size(); i++) {
                         list2.add(list.get(i));
@@ -26,10 +26,13 @@ public class Exec21 {
                 }
                 
                 for (int i = 0; i < list2.size(); i++) {
-                        if (list2.get(i) % 2 == 0) {
+                        if (list2.get(i) % 2 == 0 && list.get(i) % 2 != 0) {
                                 list2.remove(i);
+                                list.remove(i);
                         }
                 }
+                
+                
                 
                 System.out.println(list);
                 System.out.println(list2);
