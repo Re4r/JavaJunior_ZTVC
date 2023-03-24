@@ -24,10 +24,9 @@ public class Exec20 {
                                 if (args[i].equals(result[j])) {
                                         result[j] = null;
                         }
-                }
-
-                System.out.println(Arrays.toString(result));
+                }       
         }
+                System.out.println(Arrays.toString(result));
 }                
         
         static String[] example(String[] ... string) {
