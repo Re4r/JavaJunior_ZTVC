@@ -10,6 +10,11 @@ public class Exec21 {
                 
                 ArrayList<Integer> list = new ArrayList<>();
                 ArrayList<Integer> list2 = new ArrayList<>();
+                ArrayList<StringBuilder> stringBuilders = new ArrayList<>();
+                
+                for (int i = 0; i < 10; i++) {
+                        stringBuilders.add(i, new StringBuilder("*"));
+                }
        
                 for (int i = 0; i < 10; i++) {
                         list.add(i);
@@ -50,6 +55,7 @@ public class Exec21 {
 
                 System.out.println(list);
                 System.out.println(list2);
+                System.out.println(stringBuilders);
                 
                 
         }
