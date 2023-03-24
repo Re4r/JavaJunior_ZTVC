@@ -2,6 +2,7 @@
 package lesson21;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Exec21 {
         
@@ -9,7 +10,7 @@ public class Exec21 {
                 
                 ArrayList<Integer> list = new ArrayList<>();
                 ArrayList<Integer> list2 = new ArrayList<>();
-                
+       
                 for (int i = 0; i < 10; i++) {
                         list.add(i);
                 }
@@ -32,8 +33,21 @@ public class Exec21 {
                         }
                 }
                 
+                list2.addAll(list);
+                list.addAll(0, list2);
+                
+                for (int i = 0; i < list2.size(); i++) {
+                        for (int j = 0; j < list.size(); j++) {
+                                if (Objects.equals(list2.get(i), list.get(j))) {
+                                        list.remove(j);
+                                }
+                        }
+                }
+                
+                list.addAll(0, list2);
                 
                 
+
                 System.out.println(list);
                 System.out.println(list2);
                 
