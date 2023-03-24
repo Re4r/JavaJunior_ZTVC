@@ -9,11 +9,13 @@ public class Exec21 {
                 
                 ArrayList<Integer> list = new ArrayList<>();
                 
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < 20; i++) {
                         list.add(i);
                 }
                 
                 System.out.println(list);
+                System.out.println(list.size());
+                
         }
 
 }
