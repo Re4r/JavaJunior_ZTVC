@@ -51,6 +51,10 @@ public class Exec21 {
                 
                 list.addAll(0, list2);
                 
+                for (StringBuilder sb : stringBuilders) {
+                        sb.append('$');
+                }
+                
                 
 
                 System.out.println(list);
