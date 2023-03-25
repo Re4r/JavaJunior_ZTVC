@@ -11,17 +11,20 @@ public class Exec21 {
                 ArrayList<Integer> list = new ArrayList<>();
                 ArrayList<Integer> list2 = new ArrayList<>();
                 ArrayList<StringBuilder> stringBuilders = new ArrayList<>();
+                ArrayList<Integer> list3 = new ArrayList<>();
                 
-                for (int i = 0; i < 10; i++) {
+                int random = (int)(Math.random() * 10);
+                
+                for (int i = 0; i < random; i++) {
                         stringBuilders.add(i, new StringBuilder("*"));
                 }
        
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < random; i++) {
                         list.add(i);
                 }
-                
-                list.add(list.size(), (int)(Math.random() * 10));
-                list.add(0, (int)(Math.random() * 10));
+
+                list.add(list.size(), random);
+                list.add(0, random);
                 
                 for (int i = 0; i < list.size(); i++) {
                         list2.add(list.get(i));
@@ -56,15 +59,22 @@ public class Exec21 {
                         sb.append('*');
                 }
                 
-                list.clear();
-                list2.clear();
-                stringBuilders.clear();
+//                list.clear();
+//                list2.clear();
+//                stringBuilders.clear();
+
+                for (int i = 0; i < 20; i++) {
+                        list3.add(list.indexOf(i));
+                }
+
+
                 
                 
 
                 System.out.println(list);
                 System.out.println(list2);
-                System.out.println(stringBuilders);
+                System.out.println(list3);
+                
                 
                 
         }
