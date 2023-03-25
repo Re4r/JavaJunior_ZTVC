@@ -63,17 +63,20 @@ public class Exec21 {
 //                list2.clear();
 //                stringBuilders.clear();
 
-                for (int i = 0; i < 20; i++) {
+                for (int i = 0; i < random; i++) {
                         list3.add(list.indexOf(i));
                 }
-
-
                 
-                
+                String s1 = list.toString();
+                String s2 = list2.toString();
+                String s3 = list3.toString();
 
                 System.out.println(list);
                 System.out.println(list2);
                 System.out.println(list3);
+                System.out.println(s1);
+                System.out.println(s2);
+                System.out.println(s3);
                 
                 
                 
