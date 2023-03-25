@@ -53,7 +53,12 @@ public class Exec21 {
                 
                 for (StringBuilder sb : stringBuilders) {
                         sb.append('$');
+                        sb.append('*');
                 }
+                
+                list.clear();
+                list2.clear();
+                stringBuilders.clear();
                 
                 
 
