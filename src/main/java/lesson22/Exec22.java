@@ -22,6 +22,10 @@ public class Exec22 {
                 System.out.println(Arrays.compare(a, b));
                 System.out.println(Arrays.compare(b, c));
                 System.out.println(Arrays.compare(c, a));
+                
+                System.out.println(Arrays.mismatch(a, b));
+                System.out.println(Arrays.mismatch(b, c));
+                System.out.println(Arrays.mismatch(c, a));
 
         }
         
