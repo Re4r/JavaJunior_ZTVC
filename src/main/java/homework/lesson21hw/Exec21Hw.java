@@ -2,7 +2,6 @@
 package homework.lesson21hw;
 
 import java.util.*;
-import lesson7.A;
 
 public class Exec21Hw {
         
