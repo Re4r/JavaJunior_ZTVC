@@ -3,7 +3,9 @@ package lesson23;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Exec23 {
         
@@ -46,6 +48,21 @@ public class Exec23 {
                 System.out.println(list1.containsAll(list2));
                 System.out.println(list3.containsAll(list4));
                 System.out.println("-----------------------------------------");
+                
+                List list5 = List.of(list1, list2, list3, list4);
+                System.out.println(list5);
+                List list6 = List.copyOf(list5);
+                System.out.println(list6);
+                System.out.println("-----------------------------------------");
+                
+                Map<Integer, String> map = new HashMap<>();
+                int count = 0;
+                while(count < 10) {
+                        map.put(((int)(Math.random() * 10)), "one");
+                        count++;
+                }
+                
+                System.out.println(map);
                 
                 
 
