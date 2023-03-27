@@ -17,6 +17,17 @@ public class Exec21_3 {
                 while (iterator.hasNext()) {
                         System.out.print(iterator.next() + " ");
                 }
+                
+                System.out.println();
+                
+                ListIterator<Integer> listIterator = list.listIterator();
+                while (listIterator.hasNext()) {
+                        listIterator.next();
+                        listIterator.remove();
+                        
+                }
+                
+                System.out.println(list);
         }
 
 }
