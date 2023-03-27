@@ -2,6 +2,8 @@
 package lesson23;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Exec23 {
         
@@ -18,6 +20,17 @@ public class Exec23 {
                 initializeOfLIst(list3);
                 initializeOfLIst(list4);
                 
+                Object[] array = list1.toArray();
+                Integer[] array2 = list2.toArray(Integer[]::new);
+                
+                System.out.println(Arrays.toString(array));
+                System.out.println(Arrays.toString(array2));
+                System.out.println("-----------------------------------------");
+
+                List<Integer> subList = list1.subList(0, 3);
+                System.out.println(subList);
+                System.out.println("-----------------------------------------");
+                
                 System.out.println(list1);
                 System.out.println(list2);
                 list1.removeAll(list2);
@@ -33,6 +46,8 @@ public class Exec23 {
                 System.out.println(list1.containsAll(list2));
                 System.out.println(list3.containsAll(list4));
                 System.out.println("-----------------------------------------");
+                
+                
 
         }
         
