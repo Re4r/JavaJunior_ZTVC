@@ -26,7 +26,7 @@ public class Exec21Hw {
                         for (int j = 1; j < list.size(); j++) {
                                 if (list.get(i).equals(list.get(j))) {
                                         list.remove(j);     
-                                }
+                                }    
                         }
                 }
                 Collections.sort(list);
