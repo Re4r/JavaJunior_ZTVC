@@ -8,7 +8,7 @@ public class Exec21Hw {
         
         public static void main(String[] args) {
                 
-                showResult("ABC", "CDE", "RTE", "UTR");
+                showResult(stringArrayGenerator());
   
         }
         
