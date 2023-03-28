@@ -3,11 +3,11 @@ package lesson25;
 public class Citizen {
 
     private String sex;
-    private String name;
+    private StringBuilder name;
     private int age;
     private int weight;
 
-    public Citizen(String sex, String name, int age, int weight) {
+    public Citizen(String sex, StringBuilder name, int age, int weight) {
         this.sex = sex;
         this.name = name;
         this.age = age;
@@ -18,8 +18,9 @@ public class Citizen {
         return sex;
     }
 
-    public String getName() {
-        return name;
+    public StringBuilder getName() {
+        StringBuilder sb = new StringBuilder(name);
+        return sb;
     }
 
     public int getAge() {
@@ -34,7 +35,7 @@ public class Citizen {
         this.sex = sex;
     }
 
-    public void setName(String name) {
+    public void setName(StringBuilder name) {
         this.name = name;
     }
 
