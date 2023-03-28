@@ -4,7 +4,14 @@ import java.util.Scanner;
 
 public class YaMatrix {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
+        final var scanner = new Scanner(System.in);
+        final var matrixA = inputMatrix(scanner);
+        final var matrixB = inputMatrix(scanner);
+        final var matrixM = multiply(matrixA, matrixB);
+        if (matrixM == null) {
+            return;
+        }
 
     }
 
@@ -41,7 +48,15 @@ public class YaMatrix {
     }
 
     private static int max_len(final int[][] m) {
-
+        var max = m[0][0];
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[0].length; j++) {
+                if (m[i][j] > max) {
+                    max = m[i][j];
+                }
+            }
+        }
+        return Double.valueOf(Math.log10(max)).intValue() + 1;
     }
 
 }
