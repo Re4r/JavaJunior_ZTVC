@@ -12,6 +12,9 @@ public class YaMatrix {
         if (matrixM == null) {
             return;
         }
+        final var len = max_len(matrixM);
+        showResultMatrix(matrixM);
+        
 
     }
 
@@ -57,6 +60,14 @@ public class YaMatrix {
             }
         }
         return Double.valueOf(Math.log10(max)).intValue() + 1;
+    }
+    
+    static void showResultMatrix(int[][] matrixM) {
+        for (int i = 0; i < matrixM.length; i++) {
+            for (int j = 0; j < matrixM[0].length; j++) {
+                System.out.println(matrixM[i][j]);
+            }
+        }
     }
 
 }
