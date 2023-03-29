@@ -14,15 +14,15 @@ public class Exec25 {
 
         Postman postman = new Postman("Male", new StringBuilder("Tony"), 37, 79);
         Spaceman spaceman = new Spaceman("Female", new StringBuilder("Lara"), 44, 67);
-        
+
         postman.walk();
         postman.stop();
         postman.mailDelivery();
-        
+
         spaceman.walk();
         spaceman.stop();
         spaceman.spaceTraveling();
-        
+
         Engine engine = new Engine();
         engine.startUp();
 
@@ -52,12 +52,15 @@ class Spaceman extends Citizen {
 }
 
 class SpaceShip {
+
     Engine engine = new Engine();
     Engine engine2 = new Engine();
-    
+    Postman postman = new Postman("Male", new StringBuilder("Iggy"), 23, 69);
+
 }
 
 class Engine {
+
     public void startUp() {
         System.out.println("Engine start");
     }
