@@ -22,6 +22,9 @@ public class Exec25 {
         spaceman.walk();
         spaceman.stop();
         spaceman.spaceTraveling();
+        
+        Engine engine = new Engine();
+        engine.startUp();
 
     }
 }
@@ -45,5 +48,17 @@ class Spaceman extends Citizen {
 
     public void spaceTraveling() {
         System.out.println("Welcome to moon");
+    }
+}
+
+class SpaceShip {
+    Engine engine = new Engine();
+    Engine engine2 = new Engine();
+    
+}
+
+class Engine {
+    public void startUp() {
+        System.out.println("Engine start");
     }
 }
