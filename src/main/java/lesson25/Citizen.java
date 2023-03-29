@@ -50,4 +50,11 @@ public class Citizen {
             this.weight = weight;
         }
     }
+    
+    public void walk() {
+        System.out.println("Citizen walk");
+    }
+    public void stop() {
+        System.out.println("Citizen stop");
+    }
 }
