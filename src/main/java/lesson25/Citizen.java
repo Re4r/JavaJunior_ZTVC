@@ -52,9 +52,9 @@ public class Citizen {
     }
     
     public void walk() {
-        System.out.println("Citizen walk");
+        System.out.println(this.name + " walk");
     }
     public void stop() {
-        System.out.println("Citizen stop");
+        System.out.println(this.name + " stop");
     }
 }
