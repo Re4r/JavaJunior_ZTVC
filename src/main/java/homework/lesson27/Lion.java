@@ -1,12 +1,16 @@
 package homework.lesson27;
 
-public class Lion extends Mammal{
-    
+public class Lion extends Mammal {
+
     private String name;
 
     public Lion(String name) {
         super(name);
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -23,10 +27,5 @@ public class Lion extends Mammal{
     void sleep() {
         System.out.println("Lion Sleep");
     }
-    
-    
-    
-    
-    
 
 }
