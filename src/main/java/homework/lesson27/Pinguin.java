@@ -1,6 +1,6 @@
 package homework.lesson27;
 
-public class Pinguin extends Bird implements Speakable {
+public class Pinguin extends Bird {
 
     private String name;
 
@@ -11,17 +11,17 @@ public class Pinguin extends Bird implements Speakable {
 
     @Override
     void fly() {
-
+        System.out.println("Pinguin Fly");
     }
 
     @Override
     void eat() {
-
+        System.out.println("Pinguin Eats");
     }
 
     @Override
     void sleep() {
-
+        System.out.println("Pinguin Sleeps");
     }
 
     @Override
