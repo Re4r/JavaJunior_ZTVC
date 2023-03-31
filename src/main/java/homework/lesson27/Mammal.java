@@ -1,15 +1,14 @@
 package homework.lesson27;
 
-abstract class Bird extends Animal{
-    
+abstract class Mammal extends Animal {
+
     private String name;
 
-    public Bird(String name) {
+    public Mammal(String name) {
         super(name);
         this.name = name;
     }
-    
-    abstract void fly();
-    
+
+    abstract void run();
 
 }
