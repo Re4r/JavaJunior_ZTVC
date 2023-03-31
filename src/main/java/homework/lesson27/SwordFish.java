@@ -1,12 +1,16 @@
 package homework.lesson27;
 
-public class SwordFish extends Fish{
-    
+public class SwordFish extends Fish {
+
     private String name;
 
     public SwordFish(String name) {
         super(name);
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -18,9 +22,5 @@ public class SwordFish extends Fish{
     void eat() {
         System.out.println("SwordFish Eats");
     }
-    
-    
-    
-    
 
 }

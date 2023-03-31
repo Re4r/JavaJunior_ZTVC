@@ -13,7 +13,7 @@ abstract class Fish extends Animal {
     void sleep() {
         System.out.println("Fish Sleep");
     }
-    
+
     abstract void swim();
 
 }
