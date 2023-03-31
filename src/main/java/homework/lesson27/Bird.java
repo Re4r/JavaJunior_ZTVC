@@ -1,6 +1,6 @@
 package homework.lesson27;
 
-abstract class Bird extends Animal{
+abstract class Bird extends Animal implements Speakable{
     
     private String name;
 
@@ -10,6 +10,19 @@ abstract class Bird extends Animal{
     }
     
     abstract void fly();
+
+    @Override
+    public void speak() {
+        System.out.println(name + "Sings"); 
+    }
+
+   
+    
+    
+    
+    
+    
+    
     
 
 }

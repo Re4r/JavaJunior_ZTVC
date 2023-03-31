@@ -1,6 +1,6 @@
 package homework.lesson27;
 
-abstract class Mammal extends Animal {
+abstract class Mammal extends Animal implements Speakable{
 
     private String name;
 
