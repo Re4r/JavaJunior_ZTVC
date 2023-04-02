@@ -11,7 +11,6 @@ public final class Exec29 {
 //        Employee emp3 = new Doctor("Factro");
 //
 //        Employee[] array = {emp1, emp2, emp3};
-
         ArrayList<Employee> list = new ArrayList<>();
 
 //        for (Employee emp : array) {
