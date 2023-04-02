@@ -2,15 +2,15 @@ package lesson29;
 
 import java.util.ArrayList;
 
-public class Exec29 {
+public final class Exec29 {
 
     public static void main(String[] args) {
 
-        Employee emp1 = new Driver("JoJo");
-        Employee emp2 = new Teacher("Awero");
-        Employee emp3 = new Doctor("Factro");
-
-        Employee[] array = {emp1, emp2, emp3};
+//        Employee emp1 = new Driver("JoJo");
+//        Employee emp2 = new Teacher("Awero");
+//        Employee emp3 = new Doctor("Factro");
+//
+//        Employee[] array = {emp1, emp2, emp3};
 
         ArrayList<Employee> list = new ArrayList<>();
 
@@ -75,7 +75,7 @@ interface Helpable {
     void help();
 }
 
-class Driver extends Employee {
+final class Driver extends Employee {
 
     public Driver(String name) {
         super(name);
@@ -93,7 +93,7 @@ class Driver extends Employee {
 
 }
 
-class Teacher extends Employee {
+final class Teacher extends Employee {
 
     public Teacher(String name) {
         super(name);
@@ -111,7 +111,7 @@ class Teacher extends Employee {
 
 }
 
-class Doctor extends Employee implements Helpable {
+final class Doctor extends Employee implements Helpable {
 
     public Doctor(String name) {
         super(name);
