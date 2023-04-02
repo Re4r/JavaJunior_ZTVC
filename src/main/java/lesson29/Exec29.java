@@ -1,8 +1,30 @@
 package lesson29;
 
+import java.util.ArrayList;
+
 public class Exec29 {
 
     public static void main(String[] args) {
+
+        Employee emp1 = new Driver("JoJo");
+        Employee emp2 = new Teacher("Awero");
+        Employee emp3 = new Doctor("Factro");
+
+        Employee[] array = {emp1, emp2, emp3};
+
+        ArrayList<Employee> list = new ArrayList<>();
+
+        for (Employee emp : array) {
+            list.add(emp);
+        }
+
+        for (Employee emp : list) {
+            emp.work();
+            emp.sleep();
+            if (emp instanceof Doctor) {
+                ((Doctor) emp).help();
+            }
+        }
 
     }
 
