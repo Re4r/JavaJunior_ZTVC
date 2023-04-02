@@ -50,3 +50,44 @@ class Driver extends Employee {
     }
 
 }
+
+class Teacher extends Employee {
+
+    public Teacher(String name) {
+        super(name);
+    }
+
+    @Override
+    void work() {
+        System.out.println("Teacher " + this.getName() + " works");
+    }
+
+    @Override
+    void sleep() {
+        super.sleep();
+    }
+
+}
+
+class Doctor extends Employee implements Helpable {
+
+    public Doctor(String name) {
+        super(name);
+    }
+
+    @Override
+    void work() {
+        System.out.println("Doctor " + this.getName() + " works");
+    }
+
+    @Override
+    void sleep() {
+        super.sleep();
+    }
+
+    @Override
+    public void help() {
+        System.out.println("Doctor " + this.getName() + " helps");
+    }
+
+}
