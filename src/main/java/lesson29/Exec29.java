@@ -14,15 +14,35 @@ public class Exec29 {
 
         ArrayList<Employee> list = new ArrayList<>();
 
-        for (Employee emp : array) {
-            list.add(emp);
+//        for (Employee emp : array) {
+//            list.add(emp);
+//        }
+//
+//        for (Employee emp : list) {
+//            emp.work();
+//            emp.sleep();
+//            if (emp instanceof Doctor) {
+//                ((Doctor) emp).help();
+//            }
+//        }
+        for (int i = 0; i <= 10; i++) {
+            if (i % 2 == 0) {
+                list.add(new Doctor(String.valueOf(i)));
+            } else {
+                list.add(new Driver(String.valueOf(i)));
+            }
         }
 
         for (Employee emp : list) {
-            emp.work();
-            emp.sleep();
             if (emp instanceof Doctor) {
+                emp.work();
+                emp.sleep();
                 ((Doctor) emp).help();
+            }
+
+            if (emp instanceof Driver) {
+                emp.work();
+                emp.sleep();
             }
         }
 
