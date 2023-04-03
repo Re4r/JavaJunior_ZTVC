@@ -9,9 +9,12 @@ public class Exec30 {
         Car c1 = new Car("Red", "V8");
         Car c2 = new Car("Red", "V8");
         Car c3 = new Car("Black", "V6");
-        
+
         System.out.println(c1.equals(c2));
         System.out.println(c2.equals(c3));
+        System.out.println(c1.hashCode());
+        System.out.println(c2.hashCode());
+        System.out.println(c3.hashCode());
 
     }
 
