@@ -15,6 +15,8 @@ public class Exec30 {
         System.out.println(c1.hashCode());
         System.out.println(c2.hashCode());
         System.out.println(c3.hashCode());
+        System.out.println("-----------");
+        System.out.println(c1);
 
     }
 
@@ -22,8 +24,8 @@ public class Exec30 {
 
 class Car {
 
-    private String color;
-    private String engine;
+    private final String color;
+    private final String engine;
 
     public Car(String color, String engine) {
         this.color = color;
@@ -62,6 +64,11 @@ class Car {
             return false;
         }
         return Objects.equals(this.engine, other.engine);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" + "color=" + color + ", engine=" + engine + '}';
     }
 
 }
