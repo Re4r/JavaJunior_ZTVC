@@ -4,16 +4,26 @@ import java.io.*;
 
 public class Exec31 {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
+
         File file = new File("D:\\lessonZT\\test31.txt");
-        FileOutputStream fos = new FileOutputStream(file);
-        for (int i = 0; i < 10; i++) {
-            fos.write(i);
+
+        try {
+            FileOutputStream fos = new FileOutputStream(file);
+            for (int i = 0; i < 10; i++) {
+                fos.write(i);
+            }
+
+            FileInputStream fis = new FileInputStream(file);
+            for (int i = 0; i < 10; i++) {
+                System.out.print(" " + fis.read());
+            }
+        } catch (FileNotFoundException fnfe) {
+            System.out.println(fnfe);
+        } catch (IOException ioe) {
+            System.out.println(ioe);
         }
-        FileInputStream fis = new FileInputStream(file);
-        for (int i = 0; i < 10; i++) {
-            System.out.print(" " + fis.read());
-        }
+
     }
 
 }
