@@ -6,8 +6,7 @@ public class Exec31 {
 
     public static void main(String[] args) {
 
-        File file = new File("D:\\lessonZT\\test31.txt");
-
+//        File file = new File("D:\\lessonZT\\test31.txt");
         try {
             FileOutputStream fos = new FileOutputStream(file);
             for (int i = 0; i < 10; i++) {
@@ -24,6 +23,18 @@ public class Exec31 {
             System.out.println(ioe);
         }
 
+    }
+
+    static File makePath(String path) {
+        return new File(path);
+    }
+
+    static void write(File file) {
+        try {
+            FileOutputStream fos = new FileOutputStream(file);
+        } catch (FileNotFoundException fnfe) {
+            System.out.println(fnfe);
+        }
     }
 
 }
