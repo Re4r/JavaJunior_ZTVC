@@ -16,12 +16,10 @@ public class Exec31 {
     }
 
     static void write(File file) {
-        try {
-            FileOutputStream fos = new FileOutputStream(file);
+        try (FileOutputStream fos = new FileOutputStream(file)) {
             for (int i = 0; i < 10; i++) {
                 fos.write(i);
             }
-            fos.close();
         } catch (FileNotFoundException fnfe) {
             System.out.println(fnfe);
         } catch (IOException ioe) {
@@ -30,12 +28,11 @@ public class Exec31 {
     }
 
     static void read(File file) {
-        try {
-            FileInputStream fis = new FileInputStream(file);
+
+        try (FileInputStream fis = new FileInputStream(file)) {
             for (int i = 0; i < 10; i++) {
-                System.out.print(" " + fis.read());
+                System.out.println(" " + fis.read());
             }
-            fis.close();
         } catch (FileNotFoundException fnfe) {
             System.out.println(fnfe);
         } catch (IOException ioe) {
