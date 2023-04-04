@@ -3,20 +3,20 @@ package lesson32;
 public class Exec32 {
 
     public static void main(String[] args) {
-        
+
         Tiger tiger = new Tiger();
-        tiger.eat("meat");
+
         try {
-            tiger.drink("water");
-            try {
-                tiger.drink("beer");
-            } catch (NotWater nw) {
-                nw.getMessage();
-            }
-        } catch (Exception e) {
-            e.getMessage();
+            tiger.eat("banana");
+        } catch (NotMeat nm) {
+            System.out.println(nm);
         } finally {
-            System.out.println("This is finally block");
+            System.out.println("finally block");
+            try {
+                tiger.drink("juice");
+            } catch (NotWater nw) {
+                System.out.println(nw);
+            }
         }
 
     }
@@ -41,7 +41,7 @@ class NotWater extends Exception {
 
 class Tiger {
 
-    void eat(String item) {
+    void eat(String item) throws NotMeat {
         if (!item.equals("meat")) {
             throw new NotMeat("Tiger don't eat " + item);
         } else {
@@ -49,7 +49,7 @@ class Tiger {
         }
     }
 
-    void drink(String item) throws NotWater{
+    void drink(String item) throws NotWater {
         if (!item.equals("water")) {
             throw new NotWater("Tiger don't drink " + item);
         } else {
