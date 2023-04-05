@@ -8,7 +8,7 @@ public class Exec333 {
     private static final DateTimeFormatter DTF = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
 
     public static void main(String[] args) {
-        LocalDateTime ldt1 = LocalDateTime.now().now();
+        LocalDateTime ldt1 = LocalDateTime.now();
         LocalDateTime ldt2 = LocalDateTime.of(2025, Month.MARCH, 10, 22, 37);
         Period period = Period.ofMonths(1);
         Duration duration = Duration.ofDays(1);
