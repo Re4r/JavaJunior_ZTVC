@@ -27,6 +27,11 @@ public class Exec332 {
         System.out.println(ld.format(dtf3));
         System.out.println(ldt);
         System.out.println(ldt.format(dtf4));
+        System.out.println("--------------");
+
+        DateTimeFormatter dtf5 = DateTimeFormatter.ofPattern("MM dd yyyy");
+        LocalDate ld1 = LocalDate.parse("01 02 2015", dtf5);
+        System.out.println(ld1);
 
     }
 
