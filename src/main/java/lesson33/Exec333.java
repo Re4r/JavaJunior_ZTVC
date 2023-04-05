@@ -5,7 +5,7 @@ import java.time.format.*;
 
 public class Exec333 {
 
-    static DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+    private static final DateTimeFormatter DTF = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
 
     public static void main(String[] args) {
         LocalDateTime ldt1 = LocalDateTime.now().now();
@@ -21,7 +21,7 @@ public class Exec333 {
         LocalDateTime date = ld;
         LocalDateTime date2 = ld1;
         while (date.isBefore(date2)) {
-            System.out.println("From: " + date.format(dtf) + " To: " + date2.format(dtf));
+            System.out.println("From: " + date.format(DTF) + " To: " + date2.format(DTF));
             date = date.plus(p);
             date2 = date2.minus(d);
         }
