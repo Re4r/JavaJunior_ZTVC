@@ -4,7 +4,7 @@ import java.time.*;
 import java.time.format.*;
 
 public class Exec333 {
-    
+
     static DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
 
     public static void main(String[] args) {
@@ -12,7 +12,6 @@ public class Exec333 {
         LocalDateTime ldt2 = LocalDateTime.of(2025, Month.MARCH, 10, 22, 37);
         Period period = Period.ofMonths(1);
         Duration duration = Duration.ofDays(1);
-        System.out.println(duration);
 
         workTrace(ldt1, ldt2, period, duration);
 
