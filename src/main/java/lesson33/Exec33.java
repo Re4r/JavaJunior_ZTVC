@@ -15,12 +15,14 @@ public class Exec33 {
         LocalTime lt1 = LocalTime.of(22, 15);
         LocalTime lt2 = LocalTime.of(22, 15, 30);
         LocalTime lt3 = LocalTime.of(22, 15, 30, 999999999);
+        LocalDateTime ldlt = LocalDateTime.of(ld2, lt3);
 
         System.out.println(ld1);
         System.out.println(ld2);
         System.out.println(lt1);
         System.out.println(lt2);
         System.out.println(lt3);
+        System.out.println(ldlt);
 
     }
 
