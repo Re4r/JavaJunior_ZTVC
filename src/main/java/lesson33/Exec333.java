@@ -5,7 +5,11 @@ import java.time.format.*;
 
 public class Exec333 {
 
-    private static final DateTimeFormatter DTF = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+    private static final DateTimeFormatter DTF;
+    
+    static {
+        DTF = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+    }
 
     public static void main(String[] args) {
         LocalDateTime ldt1 = LocalDateTime.now();
