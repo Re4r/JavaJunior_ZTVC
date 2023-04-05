@@ -25,10 +25,10 @@ public class Exec321 {
         try {
             fis = new FileInputStream(file1);
             fos = new FileOutputStream(file2);
-            for (int i = 0; i < fis.available(); i++) {
-                fos.write(fis.read());
-            }
-//            fis.transferTo(fos);
+//            for (int i = 0; i < fis.available(); i++) {
+//                fos.write(fis.read());
+//            }
+            fis.transferTo(fos);
 //            fos.write(fis.readAllBytes());
         } catch (FileNotFoundException fnfe) {
             fnfe.getMessage();
