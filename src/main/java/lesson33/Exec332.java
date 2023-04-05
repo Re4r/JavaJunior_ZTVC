@@ -20,6 +20,14 @@ public class Exec332 {
         DateTimeFormatter dtf2 = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
         System.out.println(ldt);
         System.out.println(ldt.format(dtf2));
+        System.out.println(ldt.format(dtf));
+        System.out.println(ldt.format(dtf1));
+        DateTimeFormatter dtf3 =DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+        DateTimeFormatter dtf4 =DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT, FormatStyle.SHORT);
+        System.out.println(ld);
+        System.out.println(ld.format(dtf3));
+        System.out.println(ldt);
+        System.out.println(ldt.format(dtf4));
 
     }
 
