@@ -24,7 +24,7 @@ class Robot {
         return weight;
     }
 
-    static void factory(int quantity) {
+    static void factory(final int quantity) {
         ArrayList<Robot> robots = new ArrayList<>();
         for (int i = 1; i <= quantity; i++) {
             robots.add(new Robot(i * ((int) (Math.random() * 100))));
