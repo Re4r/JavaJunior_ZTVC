@@ -17,7 +17,7 @@ public class Exec34 {
 
 class Robot {
 
-    private int weight;
+    private final int weight;
 
     public Robot(int weight) {
         this.weight = weight;
