@@ -2,7 +2,6 @@ package lesson34;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class Exec34 {
@@ -10,9 +9,13 @@ public class Exec34 {
     public static void main(String[] args) {
 
         var robots = Robot.factory(20);
-        Robot.showItems(robots);
+        System.out.println(Robot.showItems(robots));
+        robots.sort(Comparator.comparing(Robot::getWeight));
+        System.out.println(Robot.showItems(robots));
+        robots.sort(Comparator.comparing(Robot::getWeight).reversed());
+        System.out.println(Robot.showItems(robots));
         var filteredRobots = Robot.weightFilter(robots, ((r) -> r.getWeight() > 100 && r.getWeight() < 500));
-        Robot.showItems(filteredRobots);
+        System.out.println(Robot.showItems(filteredRobots));
         System.out.println("------------------------------------------------");
         var experimet = Robot.factory(20);
         experimet.sort(Comparator.comparing(Robot::getWeight));
