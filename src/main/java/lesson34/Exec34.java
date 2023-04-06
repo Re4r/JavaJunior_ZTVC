@@ -1,14 +1,15 @@
 package lesson34;
 
 import java.util.ArrayList;
+import java.util.function.Predicate;
 
 public class Exec34 {
 
     public static void main(String[] args) {
 
-        var robots = Robot.factory(10);
+        var robots = Robot.factory(20);
         Robot.showItems(robots);
-        var filteredRobots = Robot.weightFilter(robots, ((r) -> r.getWeight() > 100 && r.getWeight() < 300));
+        var filteredRobots = Robot.weightFilter(robots, ((r) -> r.getWeight() > 100 && r.getWeight() < 500));
         Robot.showItems(filteredRobots);
 
     }
@@ -35,10 +36,10 @@ class Robot {
         return robots;
     }
 
-    static ArrayList<Robot> weightFilter(ArrayList<Robot> alr, Filtration filtration) {
+    static ArrayList<Robot> weightFilter(ArrayList<Robot> alr, Predicate<Robot> predicate) {
         ArrayList<Robot> frs = new ArrayList<>();
         for (Robot r : alr) {
-            if (filtration.filter(r)) {
+            if (predicate.test(r)) {
                 frs.add(r);
             }
         }
@@ -53,10 +54,4 @@ class Robot {
         System.out.println(is.toString());
     }
 
-}
-
-@FunctionalInterface
-interface Filtration {
-
-    boolean filter(Robot robot);
 }
