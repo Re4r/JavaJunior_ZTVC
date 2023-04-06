@@ -8,7 +8,8 @@ public class Exec34 {
         
         var robots = Robot.factory(10);
         Robot.showItems(robots);
-        var filteredRobots = Robot.weightFilter(robots, ((r) -> r.getWeight() > 100));
+        var filteredRobots = Robot.weightFilter(robots, ((r) -> r.getWeight() > 100 && r.getWeight() < 300));
+        Robot.showItems(filteredRobots);
         
  
 
