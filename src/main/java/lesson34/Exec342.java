@@ -14,20 +14,33 @@ public class Exec342 {
         emploees.add(new Emploee("Janet", "Administration", 130));
         emploees.add(new Emploee("Patrick", "Engeneering", 290));
         
-        showAllEmployeeInformation(emploees);
+//        showAllEmployeeInf(emploees);
+        
+        employeeFilter(emploees, (x) -> x.getDepartment().equals("IT"));
+        employeeFilter(emploees, (x) -> x.getSalary() > 200);
+        employeeFilter(emploees, (x) -> x.getName().startsWith("A"));
+        employeeFilter(emploees, (x) -> x.getName().endsWith("a"));
 
     }
 
-    static void showCurrentEmployeeInformation(Emploee e) {
+    static void showCurrentEmployeeInf(Emploee e) {
         System.out.println("Name: " + e.getName());
         System.out.println("Department: " + e.getDepartment());
         System.out.println("Salary: " + e.getSalary());
         System.out.println("------------------------");
     }
 
-    static void showAllEmployeeInformation(ArrayList<Emploee> emploees) {
+    static void showAllEmployeeInf(ArrayList<Emploee> emploees) {
         for (Emploee e : emploees) {
-            showCurrentEmployeeInformation(e);
+            showCurrentEmployeeInf(e);
+        }
+    }
+    
+    static void employeeFilter(ArrayList<Emploee> es, Predicate<Emploee> p) {
+        for (Emploee e : es) {
+            if (p.test(e)) {
+                showCurrentEmployeeInf(e);
+            }
         }
     }
 
