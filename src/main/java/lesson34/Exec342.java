@@ -13,9 +13,9 @@ public class Exec342 {
         emploees.add(new Emploee("Susana", "Management", 150));
         emploees.add(new Emploee("Janet", "Administration", 130));
         emploees.add(new Emploee("Patrick", "Engeneering", 290));
-        
+
 //        showAllEmployeeInf(emploees);
-        
+
         employeeFilter(emploees, (x) -> x.getDepartment().equals("IT"));
         employeeFilter(emploees, (x) -> x.getSalary() > 200);
         employeeFilter(emploees, (x) -> x.getName().startsWith("A"));
@@ -35,7 +35,7 @@ public class Exec342 {
             showCurrentEmployeeInf(e);
         }
     }
-    
+
     static void employeeFilter(ArrayList<Emploee> es, Predicate<Emploee> p) {
         for (Emploee e : es) {
             if (p.test(e)) {
