@@ -6,27 +6,30 @@ import java.util.function.Predicate;
 public class Exec342 {
 
     public static void main(String[] args) {
-        
+
         ArrayList<Emploee> emploees = new ArrayList<>();
+
         emploees.add(new Emploee("Alex", "IT", 300));
         emploees.add(new Emploee("Susana", "Management", 150));
         emploees.add(new Emploee("Janet", "Administration", 130));
         emploees.add(new Emploee("Patrick", "Engeneering", 290));
         
-        for (Emploee e : emploees) {
-            showEmployeeInformation(e);
-        }
+        showAllEmployeeInformation(emploees);
 
     }
 
-    static void showEmployeeInformation(Emploee e) {
+    static void showCurrentEmployeeInformation(Emploee e) {
         System.out.println("Name: " + e.getName());
         System.out.println("Department: " + e.getDepartment());
         System.out.println("Salary: " + e.getSalary());
         System.out.println("------------------------");
     }
-    
-    
+
+    static void showAllEmployeeInformation(ArrayList<Emploee> emploees) {
+        for (Emploee e : emploees) {
+            showCurrentEmployeeInformation(e);
+        }
+    }
 
 }
 
