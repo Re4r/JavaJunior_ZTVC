@@ -12,26 +12,27 @@ import java.io.IOException;
 
 public class Exec35 {
 
-    public static void main(String[] args) throws FileNotFoundException, IOException{
+    public static void main(String[] args) {
 
         File file = new File("D:\\lessonZT\\names.txt");
-        
-        ArrayList<String> names = new ArrayList<>();
-        FileReader fr = new FileReader(file);
-        BufferedReader br = new BufferedReader(fr);
-        String line;
-        while ((line = br.readLine()) != null) {
-            names.add(line);
-        }
-        for (String s : names) {
-            System.out.println(s);
-        }
-    
+
     }
-    
-    
-    
-    
+
+    private static ArrayList<String> listOfNames(File file) {
+        ArrayList<String> names = new ArrayList<>();
+        try (FileReader fr = new FileReader(file); 
+             BufferedReader br = new BufferedReader(fr)) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                names.add(line);
+            }
+        } catch (FileNotFoundException fnfe) {
+            fnfe.printStackTrace();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
+    }
 
 }
 
