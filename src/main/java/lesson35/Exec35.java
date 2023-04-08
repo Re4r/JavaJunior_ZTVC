@@ -10,11 +10,16 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Exec35 {
+public final class Exec35 {
 
     public static void main(String[] args) {
 
         File file = new File("D:\\lessonZT\\names.txt");
+
+        var names = listOfNames(file);
+        for (var s : names) {
+            System.out.println(s);
+        }
 
     }
 
@@ -31,6 +36,14 @@ public class Exec35 {
             ioe.printStackTrace();
         }
         return names;
+    }
+    
+    static ArrayList<Unit> createUnitGroup(ArrayList<String> names, Supplier<Unit> supplier) {
+        ArrayList<Unit> units = new ArrayList<>();
+        for (int i = 0; i < names.size(); i++) {
+            units.add(supplier.get());
+        }
+        return units;
     }
 
 }
