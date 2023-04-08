@@ -13,19 +13,10 @@ import java.io.IOException;
 public final class Exec35 {
 
     public static void main(String[] args) {
-        
-        
 
         File file = new File("D:\\lessonZT\\names.txt");
         var result = unitFactory(file);
-
-        
-
-        for (var u : result) {
-            System.out.println(u.getName());
-            System.out.println(u.getArmor());
-            System.out.println("----------");
-        }
+        showAllUnitInfo(result);
 
     }
 
@@ -55,7 +46,7 @@ public final class Exec35 {
         }
         return units;
     }
-    
+
     static ArrayList<Unit> unitFactory(File file) {
         var lon = listOfNames(file);
         var eug = createEmptyUnitGroup(lon, () -> new Unit(null, 0));
@@ -64,6 +55,14 @@ public final class Exec35 {
             eug.get(i).setArmor(createArmorValue());
         }
         return eug;
+    }
+
+    static void showAllUnitInfo(ArrayList<Unit> units) {
+        for (var u : units) {
+            System.out.println(u.getName());
+            System.out.println(u.getArmor());
+            System.out.println("----------");
+        }
     }
 
 }
@@ -93,7 +92,5 @@ final class Unit {
     public void setArmor(int armor) {
         this.armor = armor;
     }
-    
-    
 
 }
