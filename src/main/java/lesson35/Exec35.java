@@ -37,7 +37,11 @@ public final class Exec35 {
         }
         return names;
     }
-    
+
+    private static int createArmorValue() {
+        return (int) (Math.random() * 99);
+    }
+
     static ArrayList<Unit> createUnitGroup(ArrayList<String> names, Supplier<Unit> supplier) {
         ArrayList<Unit> units = new ArrayList<>();
         for (int i = 0; i < names.size(); i++) {
