@@ -20,8 +20,7 @@ public class Exec35 {
 
     private static ArrayList<String> listOfNames(File file) {
         ArrayList<String> names = new ArrayList<>();
-        try (FileReader fr = new FileReader(file); 
-             BufferedReader br = new BufferedReader(fr)) {
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = br.readLine()) != null) {
                 names.add(line);
@@ -31,7 +30,7 @@ public class Exec35 {
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
-
+        return names;
     }
 
 }
