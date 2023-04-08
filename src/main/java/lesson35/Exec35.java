@@ -17,6 +17,10 @@ public final class Exec35 {
         File file = new File("D:\\lessonZT\\names.txt");
         var result = unitFactory(file);
         showAllUnitInfo(result);
+        System.out.println("*************************");
+        armorIncrease(result, (u) -> u.setArmor(u.getArmor() * createArmorValue()));
+        showAllUnitInfo(result);
+        
 
     }
 
@@ -59,9 +63,15 @@ public final class Exec35 {
 
     static void showAllUnitInfo(ArrayList<Unit> units) {
         for (var u : units) {
-            System.out.println(u.getName());
-            System.out.println(u.getArmor());
-            System.out.println("----------");
+            System.out.println("Name: " + u.getName());
+            System.out.println("Armor: " + u.getArmor());
+            System.out.println("----------------------");
+        }
+    }
+    
+    static void armorIncrease (ArrayList<Unit> units, Consumer<Unit> consumer ) {
+        for (var u : units) {
+            consumer.accept(u);
         }
     }
 
