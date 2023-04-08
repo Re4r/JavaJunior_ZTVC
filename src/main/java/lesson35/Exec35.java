@@ -20,7 +20,9 @@ public final class Exec35 {
         System.out.println("*************************");
         armorIncrease(result, (u) -> u.setArmor(u.getArmor() * createArmorValue()));
         showAllUnitInfo(result);
-        
+        System.out.println("*************************");
+        var filt = filterUnits(result, (u) -> u.getArmor() > 300 && u.getArmor() < 2000);
+        showAllUnitInfo(filt);
 
     }
 
@@ -68,11 +70,21 @@ public final class Exec35 {
             System.out.println("----------------------");
         }
     }
-    
-    static void armorIncrease (ArrayList<Unit> units, Consumer<Unit> consumer ) {
+
+    static void armorIncrease(ArrayList<Unit> units, Consumer<Unit> consumer) {
         for (var u : units) {
             consumer.accept(u);
         }
+    }
+    
+    static ArrayList<Unit> filterUnits(ArrayList<Unit> units, Predicate<Unit> predicate) {
+        ArrayList<Unit> filtered = new ArrayList<>();
+        for (var u : units) {
+            if (predicate.test(u)) {
+                filtered.add(u);
+            }
+        }
+        return filtered;
     }
 
 }
