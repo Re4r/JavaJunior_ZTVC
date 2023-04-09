@@ -17,12 +17,16 @@ public final class Exec35 {
         File file = new File("D:\\lessonZT\\names.txt");
         var result = unitFactory(file);
         showAllUnitInfo(result);
-        System.out.println("*************************");
-        armorIncrease(result, (u) -> u.setArmor(u.getArmor() * createArmorValue()));
-        showAllUnitInfo(result);
-        System.out.println("*************************");
-        var filt = filterUnits(result, (u) -> u.getArmor() > 300 && u.getArmor() < 2000);
-        showAllUnitInfo(filt);
+//        System.out.println("*************************");
+//        armorIncrease(result, (u) -> u.setArmor(u.getArmor() * createArmorValue()));
+//        showAllUnitInfo(result);
+//        System.out.println("*************************");
+//        var filt = filterUnits(result, (u) -> u.getArmor() > 300 && u.getArmor() < 2000);
+//        showAllUnitInfo(filt);
+        String s = Paramzd.elementZero(result).getName();
+        Integer i = Paramzd.elementZero(result).getArmor();
+        System.out.println("Name - " + s);
+        System.out.println("Armor - " + i);
 
     }
 
@@ -118,7 +122,9 @@ final class Unit {
 }
 
 final class Paramzd<T> {
+
     static <T> T elementZero(ArrayList<T> list) {
         return list.get(0);
     }
+
 }
