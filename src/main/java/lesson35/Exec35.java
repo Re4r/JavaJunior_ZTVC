@@ -76,7 +76,7 @@ public final class Exec35 {
             consumer.accept(u);
         }
     }
-    
+
     static ArrayList<Unit> filterUnits(ArrayList<Unit> units, Predicate<Unit> predicate) {
         ArrayList<Unit> filtered = new ArrayList<>();
         for (var u : units) {
@@ -115,4 +115,10 @@ final class Unit {
         this.armor = armor;
     }
 
+}
+
+final class Paramzd<T> {
+    static <T> T elementZero(ArrayList<T> list) {
+        return list.get(0);
+    }
 }
